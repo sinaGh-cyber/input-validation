@@ -10,8 +10,13 @@ const INPUT_STATES = {
 const Input = ({ label, id, type, validators, errorText }) => {
   return (
     <div className="form-input" data-testid="form-input">
-      <label></label>
-      <input />
+      <form >
+        <label onBlur={(e) => {
+          
+        }} htmlFor='id'>{label}</label>
+        <input type={type} id={id} />
+        </form>
+      
       <p></p>
     </div>
   )
