@@ -15,7 +15,7 @@ const Input = ({ label, id, type, validators, errorText }) => {
       } `}
       data-testid="form-input"
     >
-      <label htmlFor="id">{label}</label>
+      <label htmlFor={id}>{label}</label>
       <input
         onChange={(e) => {
           if (INPUT_STATES.UNTOUCHED) return;
